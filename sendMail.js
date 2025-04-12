@@ -1,4 +1,4 @@
-  GNU nano 8.1                                       sendmail.js                                                     
+                                           
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 
