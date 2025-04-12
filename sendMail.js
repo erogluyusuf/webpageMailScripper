@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'yusuferoglu1957@gmail.com',  // Gönderen e-posta adresi
-    pass: 'xxxx xxxx xxxx xxxx'     // Uygulama şifresi ve posta adresi şifresi
+    pass: 'xxxx xxxx xxxx xxxx'     // eğer 2F doğrulama var ise Uygulama şifresi veya mail adresi şifresi
   }
 });
 
