@@ -26,7 +26,7 @@ const transporter = nodemailer.createTransport({
 
 
 // maild.txt dosyasından alıcıları oku
-fs.readFile('maild.txt', 'utf8', (err, data) => {
+fs.readFile('mail.txt', 'utf8', (err, data) => {
   if (err) {
     console.log('Dosya okunamadı:', err);
     return;
