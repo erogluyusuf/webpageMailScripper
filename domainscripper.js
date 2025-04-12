@@ -5,7 +5,7 @@ const links = document.querySelectorAll('a');
 const currentPageUrl = window.location.hostname; // domain kısmı (örneğin 'tubisad.org.tr')
 
 // Sosyal medya ve diğer istenmeyen domain'lerin bir listesi
-const excludedDomains = ['linkedin.com', 'youtube.com', 'twitter.com', 'facebook.com', 'instagram.com'];
+const excludedDomains = ['linkedin.com', 'youtube.com', 'twitter.com', 'facebook.com', 'instagram.com', 'x.com'];
 
 // Sayfa URL'lerini tutacak bir set (duplicated URL'leri engeller)
 const hrefs = new Set();
