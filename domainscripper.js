@@ -33,7 +33,7 @@ const url = URL.createObjectURL(blob);
 // Link elemanı oluştur ve indir butonu gibi çalıştır
 const a = document.createElement('a');
 a.href = url;
-a.download = 'unique_domains.txt'; // Dosya adı
+a.download = 'url.txt'; // Dosya adı
 document.body.appendChild(a);  // Geçici olarak sayfaya ekle
 a.click(); // Dosyayı indir
 document.body.removeChild(a); // Sonrasında linki sayfadan kaldır
