@@ -63,7 +63,8 @@ const fetchEmails = async () => {
         console.log(`Fetching emails from: ${completeUrl}`);
 
         try {
-            await page.goto(completeUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+            // Sayfa yüklenene kadar daha uzun bekleyelim (60 saniye)
+            await page.goto(completeUrl, { waitUntil: 'load', timeout: 60000 });
 
             // Sayfada bulunan e-posta adreslerini topla
             const emails = await findEmails(page);
@@ -93,7 +94,7 @@ const fetchEmails = async () => {
                 if (!visitedUrls.has(completeLink) && completeLink.startsWith('http')) {
                     visitedUrls.add(completeLink);
                     console.log(`Visiting linked page: ${completeLink}`);
-                    await page.goto(completeLink, { waitUntil: 'domcontentloaded', timeout: 20000 });
+                    await page.goto(completeLink, { waitUntil: 'load', timeout: 60000 });
 
                     // Bağlantıdaki e-posta adreslerini topla
                     const linkedEmails = await findEmails(page);
