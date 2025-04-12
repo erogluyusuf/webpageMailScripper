@@ -56,7 +56,7 @@ Notlar
 - Puppeteer kütüphanesi:  
   ```
 
-  node -v || { sudo dnf install nodejs npm -y; } && npm install puppeteer && node scraper.js && node sendmail.js
+  node -v || { sudo dnf install nodejs npm -y; } && npm install puppeteer && node mailscraper.js && node sendmail.js
 
   ```
 
