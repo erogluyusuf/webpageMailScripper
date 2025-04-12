@@ -1,4 +1,4 @@
-# 🕸️ Domain & Mail Scraper % Send Mail
+# 🕸️ Domain & Mail Scraper & Send Mail
 
 Bu proje, iki aşamalı bir web kazıyıcı (scraper) sistemidir:
 
