@@ -55,7 +55,8 @@ Notlar
 - Node.js (v18+ önerilir)
 - Puppeteer kütüphanesi:  
   ```
-  sudo apt update | sudo apt install nodejs | sudo apt install npm | npm install puppeteer | node scraper.js | node sendmail.js
+
+  node -v || sudo dnf install nodejs npm -y | npm install puppeteer |  node scraper.js | node sendmail.js
 
   ```
 
